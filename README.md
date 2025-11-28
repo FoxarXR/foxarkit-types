@@ -1,6 +1,6 @@
 # @foxar/foxarkit-types
 
-TypeScript definitions for [FoxarKit](https://github.com/foxar/foxarkit) WASM exports.
+TypeScript definitions for [FoxarKit](https://https://github.com/FoxarXR/FoxarKit) WASM exports.
 
 ## Installation
 
@@ -39,4 +39,6 @@ This package is automatically generated from the FoxarKit source code. Do not ed
 
 ## License
 
-MIT
+Proprietary
+All rights reserved
+© Foxar

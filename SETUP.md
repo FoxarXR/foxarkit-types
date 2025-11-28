@@ -35,14 +35,14 @@ git add .
 git commit -m "chore: initial commit"
 
 # Sur GitHub, créer le repo foxar/foxarkit-types
-git remote add origin https://github.com/foxar/foxarkit-types.git
+git remote add origin https://github.com/FoxarXR/foxarkit-types.git
 git branch -M main
 git push -u origin main
 ```
 
 ## 6. Configurer le secret dans FoxarKit
 
-Dans le repo `foxar/FoxarKit` :
+Dans le repo `FoxarKit` :
 1. Settings → Secrets and variables → Actions
 2. New repository secret:
    - Name: `FOXARKIT_TYPES_TOKEN`
