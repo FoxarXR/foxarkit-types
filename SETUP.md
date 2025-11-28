@@ -1,31 +1,31 @@
-# Configuration de foxarkit-types sur npm
+# Setting up foxarkit-types on npm
 
-## 1. Créer un compte npm (si pas déjà fait)
+## 1. Create an npm account (if not already done)
 
-Aller sur [npmjs.com](https://www.npmjs.com/) et créer un compte.
+Go to [npmjs.com](https://www.npmjs.com/) and create an account.
 
-## 2. Créer une organisation @foxar sur npm
+## 2. Create a @foxar organization on npm
 
-1. Se connecter sur [npmjs.com](https://www.npmjs.com/)
-2. Aller dans Settings → Organizations
-3. Créer une nouvelle organisation nommée `foxar`
+1. Sign in to [npmjs.com](https://www.npmjs.com/)
+2. Go to Settings → Organizations
+3. Create a new organization named `foxar`
 
-## 3. Générer un Access Token npm
+## 3. Generate an npm Access Token
 
-1. Aller dans Account → Access Tokens
+1. Go to Account → Access Tokens
 2. Generate New Token → Classic Token
-3. Type: **Automation** (pour les CI/CD)
-4. Copier le token
+3. Type: **Automation** (for CI/CD)
+4. Copy the token
 
-## 4. Ajouter le token aux secrets GitHub
+## 4. Add the token to GitHub secrets
 
-Dans le repo `foxar/foxarkit-types` :
+In the `FoxarXR/foxarkit-types` repo:
 1. Settings → Secrets and variables → Actions
 2. New repository secret:
    - Name: `NPM_TOKEN`
-   - Value: [coller le token npm]
+   - Value: [paste the npm token]
 
-## 5. Initialiser le repo Git
+## 5. Initialize the Git repo
 
 ```bash
 cd /Users/z98/DEV_FOXAR/foxarkit-types
@@ -34,54 +34,54 @@ git init
 git add .
 git commit -m "chore: initial commit"
 
-# Sur GitHub, créer le repo foxar/foxarkit-types
+# On GitHub, create the repo FoxarXR/foxarkit-types
 git remote add origin https://github.com/FoxarXR/foxarkit-types.git
 git branch -M main
 git push -u origin main
 ```
 
-## 6. Configurer le secret dans FoxarKit
+## 6. Configure the secret in FoxarKit
 
-Dans le repo `FoxarKit` :
+In the `FoxarKit` repo:
 1. Settings → Secrets and variables → Actions
 2. New repository secret:
    - Name: `FOXARKIT_TYPES_TOKEN`
-   - Value: [Personal Access Token GitHub avec permissions `repo`]
+   - Value: [GitHub Personal Access Token with `repo` permissions]
 
-## 7. Workflow automatique
+## 7. Automatic workflow
 
-Quand tu modifies `Sources/FoxarKit/FoxarKit.swift` dans FoxarKit :
+When you modify `Sources/FoxarKit/FoxarKit.swift` in FoxarKit:
 
-1. **FoxarKit** GitHub Actions génère les types
-2. Push vers **foxarkit-types** repo
-3. **foxarkit-types** GitHub Actions publie sur npm
-4. Version bump automatique
+1. **FoxarKit** GitHub Actions generates the types
+2. Push to **foxarkit-types** repo
+3. **foxarkit-types** GitHub Actions publishes to npm
+4. Automatic version bump
 
-## 8. Utiliser dans fxr-app
+## 8. Usage in fxr-app
 
 ```bash
 cd fxr-app
 pnpm add @foxar/foxarkit-types
 ```
 
-Dans le code :
+In your code:
 
 ```typescript
 import type { FoxarExports } from '@foxar/foxarkit-types'
 ```
 
-## Test manuel (première fois)
+## Manual test (first time)
 
-Pour publier manuellement la première version :
+To manually publish the first version:
 
 ```bash
 cd /Users/z98/DEV_FOXAR/foxarkit-types
 
-# Se connecter à npm
+# Login to npm
 npm login
 
-# Publier
+# Publish
 npm publish --access public
 ```
 
-Après ça, tout sera automatique ! ✅
+After that, everything will be automatic! ✅
