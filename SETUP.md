@@ -50,12 +50,16 @@ In the `FoxarKit` repo:
 
 ## 7. Automatic workflow
 
-When you modify `Sources/FoxarKit/FoxarKit.swift` in FoxarKit:
+### Local (release.sh)
+1. Run `./Scripts/release.sh` in FoxarKit
+2. Types are generated in `generated/types/` and committed
+3. FoxarKit is tagged and pushed
 
-1. **FoxarKit** GitHub Actions generates the types
-2. Push to **foxarkit-types** repo
-3. **foxarkit-types** GitHub Actions publishes to npm
-4. Automatic version bump
+### Remote (GitHub Actions)
+1. FoxarKit workflow detects the new tag
+2. Copies types from `generated/types/` (already committed)
+3. Bumps version and pushes to foxarkit-types
+4. foxarkit-types workflow publishes to npm automatically
 
 ## 8. Usage in fxr-app
 
