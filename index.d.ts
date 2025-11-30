@@ -1,13 +1,14 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-11-30T12:31:46Z
+// Generated: 2025-11-30T13:00:23Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
   getLocalizedString(key: number, languageCode: number, defaultValue: number): number
   getAvailableLanguages(): number
   getAllTranslations(key: number): number
-  registerLocalizedString(key: number, defaultValue: number, frenchValue: number, spanishValue: number): void
+  registerTranslation(key: number, languageCode: number, value: number): void
+  registerTranslationsFromJSON(key: number, translationsJSON: number): void
   write_byte(pointer: number, value: number): void
   malloc(size: number): number
   free(pointer: number): void
