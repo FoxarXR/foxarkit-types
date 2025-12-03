@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-12-03T14:58:10Z
+// Generated: 2025-12-03T15:15:31Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -12,11 +12,11 @@ export type FoxarExports = {
   observable_count(): number
   observable_flush_messages(): number
   observable_pending_message_count(): number
-  getLocalizedString(key: number, languageCode: number, defaultValue: number): number
+  getLocalizedString(keyPtr: number, languageCodePtr: number, defaultValuePtr: number): number
   getAvailableLanguages(): number
-  getAllTranslations(key: number): number
-  registerTranslation(key: number, languageCode: number, value: number): void
-  registerTranslationsFromJSON(key: number, translationsJSON: number): void
+  getAllTranslations(keyPtr: number): number
+  registerTranslation(keyPtr: number, languageCodePtr: number, valuePtr: number): void
+  registerTranslationsFromJSON(keyPtr: number, translationsJSONPtr: number): void
   write_byte(pointer: number, value: number): void
   malloc(size: number): number
   free(pointer: number): void
