@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-12-03T15:23:02Z
+// Generated: 2025-12-03T15:30:11Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -21,5 +21,5 @@ export type FoxarExports = {
   malloc(size: number): number
   free(pointer: number): void
   fxr_add(lhs: number, rhs: number): number
-  concatenate(s1: number, s2: number): number
+  concatenate(s1Ptr: number, s2Ptr: number): number
 }
