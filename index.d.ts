@@ -1,9 +1,14 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-12-03T20:41:25Z
+// Generated: 2025-12-04T16:38:37Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
+  metadata_get(keyPtr: number, languagePtr: number): number
+  metadata_get_translations(keyPtr: number): number
+  metadata_get_all(languagePtr: number): number
+  metadata_get_keys(): number
+  metadata_exists(keyPtr: number): number
   observable_did_change(idPtr: number, jsonPtr: number): number
   observable_get_value(idPtr: number): number
   observable_get_all_ids(): number
