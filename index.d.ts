@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-12-05T07:47:13Z
+// Generated: 2025-12-09T10:11:42Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -17,6 +17,11 @@ export type FoxarExports = {
   observable_count(): number
   observable_flush_messages(): number
   observable_pending_message_count(): number
+  scheduler_tick(deltaMs: unknown): number
+  scheduler_active_count(): number
+  scheduler_current_time(): unknown
+  scheduler_cleanup(): void
+  scheduler_reset(): void
   getLocalizedString(keyPtr: number, languageCodePtr: number, defaultValuePtr: number): number
   getAvailableLanguages(): number
   getAllTranslations(keyPtr: number): number
