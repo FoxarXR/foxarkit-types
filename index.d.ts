@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-12-09T11:06:47Z
+// Generated: 2025-12-09T13:58:44Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -27,6 +27,14 @@ export type FoxarExports = {
   getAllTranslations(keyPtr: number): number
   registerTranslation(keyPtr: number, languageCodePtr: number, valuePtr: number): void
   registerTranslationsFromJSON(keyPtr: number, translationsJSONPtr: number): void
+  view_get_tree(): number
+  view_get_version(): number
+  view_action_triggered(actionIdPtr: number): number
+  view_register_action(actionIdPtr: number): number
+  view_invalidate(): void
+  view_set_color_scheme(schemePtr: number): number
+  view_set_locale(localePtr: number): number
+  view_flush_messages(): number
   write_byte(pointer: number, value: number): void
   malloc(size: number): number
   free(pointer: number): void
