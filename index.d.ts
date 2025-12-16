@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-12-16T10:54:23Z
+// Generated: 2025-12-16T14:34:24Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -22,7 +22,7 @@ export type FoxarExports = {
   scheduler_current_time(): number
   scheduler_cleanup(): void
   scheduler_reset(): void
-  getLocalizedString(keyPtr: number, languageCodePtr: number, defaultValuePtr: number): number
+  localization_get_string(keyPtr: number, languageCodePtr: number, defaultValuePtr: number): number
   getAvailableLanguages(): number
   getAllTranslations(keyPtr: number): number
   registerTranslation(keyPtr: number, languageCodePtr: number, valuePtr: number): void
