@@ -1,12 +1,18 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-12-21T20:35:38Z
+// Generated: 2025-12-21T22:30:27Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
   asset_get_lights(assetNamePtr: number): number
   asset_register(assetNamePtr: number): number
   asset_is_registered(assetNamePtr: number): number
+  foxarkit_set_platform(platformPtr: number): number
+  foxarkit_get_platform(): number
+  foxarkit_set_horizontal_size_class(valuePtr: number): number
+  foxarkit_set_vertical_size_class(valuePtr: number): number
+  foxarkit_get_horizontal_size_class(): number
+  foxarkit_get_vertical_size_class(): number
   metadata_get(keyPtr: number, languagePtr: number): number
   metadata_get_translations(keyPtr: number): number
   metadata_get_all(languagePtr: number): number
