@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-12-22T21:57:18Z
+// Generated: 2025-12-25T10:47:02Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -18,6 +18,8 @@ export type FoxarExports = {
   metadata_get_all(languagePtr: number): number
   metadata_get_keys(): number
   metadata_exists(keyPtr: number): number
+  get_observable_json(observableId: number): number
+  get_observable_string_id(observableId: number): number
   observable_did_change(idPtr: number, jsonPtr: number): number
   observable_get_value(idPtr: number): number
   observable_get_all_ids(): number
@@ -26,6 +28,7 @@ export type FoxarExports = {
   observable_count(): number
   observable_flush_messages(): number
   observable_pending_message_count(): number
+  execute_callback(callbackId: number): void
   scheduler_tick(deltaMs: number): number
   scheduler_active_count(): number
   scheduler_current_time(): number
