@@ -1,9 +1,10 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2025-12-28T09:08:08Z
+// Generated: 2025-12-31T12:44:45Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
+  get_build_info(): number
   asset_get_lights(assetNamePtr: number): number
   asset_register(assetNamePtr: number): number
   asset_is_registered(assetNamePtr: number): number
