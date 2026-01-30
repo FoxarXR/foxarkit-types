@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2026-01-26T16:29:54Z
+// Generated: 2026-01-30T21:29:37Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -40,6 +40,8 @@ export type FoxarExports = {
   getAllTranslations(keyPtr: number): number
   registerTranslation(keyPtr: number, languageCodePtr: number, valuePtr: number): void
   registerTranslationsFromJSON(keyPtr: number, translationsJSONPtr: number): void
+  getAllLocalizationData(): number
+  getBaseLanguage(): number
   view_get_tree(): number
   view_get_version(): number
   view_action_triggered(actionIdPtr: number): number
