@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2026-02-02T06:47:45Z
+// Generated: 2026-02-03T15:49:31Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -48,6 +48,7 @@ export type FoxarExports = {
   view_get_tree(): number
   view_get_version(): number
   view_action_triggered(actionIdPtr: number): number
+  view_action_triggered_with_value(actionIdPtr: number, valuePtr: number): number
   view_register_action(actionIdPtr: number): number
   view_invalidate(): void
   view_needs_update(): number
