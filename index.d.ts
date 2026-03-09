@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2026-03-07T20:47:48Z
+// Generated: 2026-03-09T21:11:37Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -17,6 +17,8 @@ export type FoxarExports = {
   foxarkit_set_view_size(widthBits: number, heightBits: number): void
   foxarkit_set_content_rect(xBits: number, yBits: number, widthBits: number, heightBits: number): void
   foxarkit_set_safe_area_insets(topBits: number, leadingBits: number, bottomBits: number, trailingBits: number): void
+  foxarkit_set_visualization_mode(modePtr: number): number
+  foxarkit_get_visualization_mode(): number
   metadata_get(keyPtr: number, languagePtr: number): number
   metadata_get_translations(keyPtr: number): number
   metadata_get_all(languagePtr: number): number
