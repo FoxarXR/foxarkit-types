@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2026-03-31T13:59:51Z
+// Generated: 2026-03-31T14:28:14Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
