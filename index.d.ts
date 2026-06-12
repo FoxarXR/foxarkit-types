@@ -1,6 +1,6 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2026-06-12T08:12:06Z
+// Generated: 2026-06-12T10:04:52Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -58,6 +58,7 @@ export type FoxarExports = {
   view_set_color_scheme(schemePtr: number): number
   view_set_locale(localePtr: number): number
   execute_ready_callback(callbackId: number): number
+  view_take_pending_guide_navigation(): number
   view_flush_messages(): number
   write_byte(pointer: number, value: number): void
   malloc(size: number): number
