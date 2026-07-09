@@ -7,6 +7,11 @@ on:
     paths:
       - 'index.d.ts'
       - 'package.json'
+  # Escape hatch. Re-running a failed run replays the workflow file as it was at that
+  # run's commit, so a workflow fix can never unblock an already-failed publish, and
+  # the paths filter above means a workflow-only push triggers nothing. Dispatching
+  # from main runs the CURRENT file.
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -22,11 +27,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           registry-url: 'https://registry.npmjs.org'
 
+      # `npm publish` below authenticates via OIDC trusted publishing (id-token: write,
+      # no NODE_AUTH_TOKEN), which needs npm >= 11.5.1. Pin the major rather than track
+      # `npm@latest`: latest moved to npm 12, whose engines are
+      # `^22.22.2 || ^24.15.0 || >=26.0.0` and rejected the Node this job runs on.
       - name: Update npm
-        run: npm install -g npm@latest
+        run: npm install -g npm@11
       - name: Publish to npm
         run: npm publish
 #        run: npm publish --provenance --access public
