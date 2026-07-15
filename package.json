@@ -1,6 +1,6 @@
 {
   "name": "@foxar/foxarkit-types",
-  "version": "1.0.455",
+  "version": "1.0.456",
   "description": "TypeScript definitions for FoxarKit WASM exports",
   "main": "index.d.ts",
   "types": "index.d.ts",
