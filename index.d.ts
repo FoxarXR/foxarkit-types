@@ -1,6 +1,5 @@
 // Auto-generated from FoxarKit WASM exports
 // DO NOT EDIT MANUALLY
-// Generated: 2026-08-22T09:39:42Z
 
 export type FoxarExports = {
   memory: WebAssembly.Memory
@@ -8,6 +7,9 @@ export type FoxarExports = {
   asset_get_lights(assetNamePtr: number): number
   asset_register(assetNamePtr: number): number
   asset_is_registered(assetNamePtr: number): number
+  physics_deliver_events(ptr: number, length: number): number
+  physics_reset_callbacks(): void
+  physics_deliver_rest(ptr: number, length: number): number
   foxarkit_set_platform(platformPtr: number): number
   foxarkit_get_platform(): number
   foxarkit_set_horizontal_size_class(valuePtr: number): number
