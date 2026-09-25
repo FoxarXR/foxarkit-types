@@ -7,6 +7,7 @@ export type FoxarExports = {
   asset_get_lights(assetNamePtr: number): number
   asset_register(assetNamePtr: number): number
   asset_is_registered(assetNamePtr: number): number
+  flow_deliver_events(ptr: number, length: number): number
   physics_deliver_events(ptr: number, length: number): number
   physics_reset_callbacks(): void
   physics_deliver_rest(ptr: number, length: number): number
