@@ -17,6 +17,7 @@ export type FoxarExports = {
   foxarkit_set_vertical_size_class(valuePtr: number): number
   foxarkit_get_horizontal_size_class(): number
   foxarkit_get_vertical_size_class(): number
+  sound_take_pending(): number
   foxarkit_set_view_size(widthBits: number, heightBits: number): void
   foxarkit_set_camera_apparent_scale(scaleBits: number): void
   foxarkit_set_content_rect(xBits: number, yBits: number, widthBits: number, heightBits: number): void
