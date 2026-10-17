@@ -54,6 +54,7 @@ export type FoxarExports = {
   getAllLocalizationData(): number
   getBaseLanguage(): number
   foxarkit_timeline_event(ptr: number, length: number): number
+  foxarkit_set_source_sites(valuePtr: number): number
   view_get_tree(): number
   view_get_version(): number
   view_action_triggered(actionIdPtr: number): number
