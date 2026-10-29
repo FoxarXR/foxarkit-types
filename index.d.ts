@@ -53,6 +53,10 @@ export type FoxarExports = {
   registerTranslationsFromJSON(keyPtr: number, translationsJSONPtr: number): void
   getAllLocalizationData(): number
   getBaseLanguage(): number
+  foxarkit_set_reader_time_zone(namePtr: number): number
+  foxarkit_set_teacher_time_zone(namePtr: number): number
+  foxarkit_set_live_clock(state: number, timeMs: number, rate: number): number
+  foxarkit_take_clock_change(): number
   foxarkit_timeline_event(ptr: number, length: number): number
   foxarkit_set_source_sites(valuePtr: number): number
   view_get_tree(): number
