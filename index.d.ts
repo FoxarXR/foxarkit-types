@@ -25,6 +25,8 @@ export type FoxarExports = {
   foxarkit_set_safe_area_insets(topBits: number, leadingBits: number, bottomBits: number, trailingBits: number): void
   foxarkit_set_visualization_mode(modePtr: number): number
   foxarkit_get_visualization_mode(): number
+  foxarkit_take_layer_requests(): number
+  foxarkit_set_layers(jsonPtr: number): number
   metadata_get(keyPtr: number, languagePtr: number): number
   metadata_get_translations(keyPtr: number): number
   metadata_get_all(languagePtr: number): number
